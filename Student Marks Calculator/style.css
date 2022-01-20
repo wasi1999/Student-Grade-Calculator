@@ -1,0 +1,120 @@
+@font-face {
+    font-family: new-font;
+    src: url(./Karla/Karla-Italic-VariableFont_wght.ttf);
+}
+body{
+    background-color: #0eb668;
+}
+.btn {
+    display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+     margin-top: 30%;
+     margin-left: 35%;
+     width: 400px;
+     height: 40px;
+     border: none;
+    font-family: new-font;
+    font-size: 20px;
+    transition: 0.6s;
+ }
+ .btn:hover{
+     background-color: transparent;
+     border: 2px solid darkgreen;
+     color: white;
+ }
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 300px;
+    width: 60%;
+    background-color: rgba(42, 42, 42, 0.972);
+    position: absolute;
+    border-radius: 14px;
+    top: 20%;
+    left: 20%;
+    margin: -25px 0 0 -25px;
+}
+h1{
+    white-space: nowrap;
+    overflow: hidden; 
+    border-left: 4px solid #0eb668 ;
+    color: #257c53;
+    padding-left: 15px;
+    margin-left: 15px;
+    font-family: new-font;
+    animation: animated-text 4s steps(29,end) 1s 1 normal both,
+             animated-cursor 600ms steps(29,end) infinite;
+}
+@keyframes animated-text{
+    from{width: 0;}
+    to{width: 150px;}
+  }
+
+
+
+label{
+    display: inline-block;
+    float: left;
+    width: 250px;
+    text-align: right;
+    margin-right: 50px;
+    color: #257c53;
+    font-weight: bold;
+}
+input{
+    display: inline-block;
+    float: left;
+    outline: none;
+    border: 0;
+    background-color: transparent;
+    border-bottom: 2px solid salmon;
+    color: wheat;
+    font-weight: bold;
+    
+}
+input::-webkit-inner-spin-button,input::-webkit-inner-spin-button{
+    appearance: none;
+}
+.heading{
+    margin-top: 30px;
+    left: 5%;
+    position: relative;
+}
+.hero{
+    margin-top: 30px;
+    position: absolute;
+    left: 60%;
+    
+}
+#result>p{
+    color: wheat;
+    margin-left: -195px;
+    margin-top: 50px;
+    font-size: 20px;
+    font-family: new-font;
+    text-align: center;
+
+}
+#result{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    height: 20px;
+    margin-top: 200px;
+    margin-left: 150px;
+    position: relative;
+}
+::placeholder{
+    color: white;
+    font-size: 15px;
+    font-weight: bolder;
+    opacity: 0.2;
+    font-family: new-font;
+}
+input:focus{
+    border-bottom: 2px solid #0eb668;
+}
